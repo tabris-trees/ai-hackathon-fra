@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360"><defs><style>.bg{fill:#0d1320}.axis{stroke:#8292a9;stroke-width:1.2}.grid{stroke:#263247;stroke-width:1}.txt{fill:#dbe6f3;font-family:Inter,Arial,sans-serif;font-size:15px}.small{font-size:12px;fill:#9fb0c7}.blue{stroke:#7db7ff;fill:none;stroke-width:4}.red{stroke:#ff7378;fill:none;stroke-width:4}.fillblue{fill:#7db7ff}.fillred{fill:#ff7378}.fillgray{fill:#aeb9c9}.white{stroke:#f7fbff;fill:none;stroke-width:4}</style></defs>
+<rect class="bg" width="900" height="360"/>
+<rect x="80" y="70" width="210" height="190" rx="14" fill="#121c2c" stroke="#30405b" stroke-width="2"/>
+<text class="txt" x="104" y="106">Stage 1</text>
+<text class="small" x="104" y="142">1.0 μm pump</text>
+<text class="small" x="104" y="172">1.8 μm seed</text>
+<text class="small" x="104" y="205">density: 0.198 n_c,p</text>
+<text class="small" x="104" y="234">2.2e20 cm^-3</text>
+<path d="M110 282 C150 318,220 318,260 282" stroke="#ff7378" stroke-width="5" fill="none"/>
+<rect x="380" y="70" width="210" height="190" rx="14" fill="#121c2c" stroke="#30405b" stroke-width="2"/>
+<text class="txt" x="404" y="106">Stage 2</text>
+<text class="small" x="404" y="142">1.8 μm pump</text>
+<text class="small" x="404" y="172">3.2 μm seed</text>
+<text class="small" x="404" y="205">density: 0.191 n_c,p</text>
+<text class="small" x="404" y="234">6.5e19 cm^-3</text>
+<path d="M410 282 C450 318,520 318,560 282" stroke="#ff7378" stroke-width="5" fill="none"/>
+<rect x="680" y="70" width="210" height="190" rx="14" fill="#121c2c" stroke="#30405b" stroke-width="2"/>
+<text class="txt" x="704" y="106">Optional</text>
+<text class="small" x="704" y="142">3.2 μm pump</text>
+<text class="small" x="704" y="172">5.6 μm seed</text>
+<text class="small" x="704" y="205">density: 0.184 n_c,p</text>
+<text class="small" x="704" y="234">2.0e19 cm^-3</text>
+<path d="M710 282 C750 318,820 318,860 282" stroke="#ff7378" stroke-width="5" fill="none"/>
+<path d="M300 165 L352 165" stroke="#7db7ff" stroke-width="5"/>
+<path d="M352 165 L336 151 M352 165 L336 179" stroke="#7db7ff" stroke-width="5" fill="none"/>
+<path d="M600 165 L652 165" stroke="#7db7ff" stroke-width="5"/>
+<path d="M652 165 L636 151 M652 165 L636 179" stroke="#7db7ff" stroke-width="5" fill="none"/>
+<text class="txt" x="76" y="34">Density-tuned cascaded FRA: near-IR to mid-IR</text>
+</svg>

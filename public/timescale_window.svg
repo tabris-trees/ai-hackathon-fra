@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="430" viewBox="0 0 860 430"><defs><style>.bg{fill:#0d1320}.axis{stroke:#8292a9;stroke-width:1.2}.grid{stroke:#263247;stroke-width:1}.txt{fill:#dbe6f3;font-family:Inter,Arial,sans-serif;font-size:15px}.small{font-size:12px;fill:#9fb0c7}.blue{stroke:#7db7ff;fill:none;stroke-width:4}.red{stroke:#ff7378;fill:none;stroke-width:4}.fillblue{fill:#7db7ff}.fillred{fill:#ff7378}.fillgray{fill:#aeb9c9}.white{stroke:#f7fbff;fill:none;stroke-width:4}</style></defs>
+<rect class="bg" width="860" height="430"/>
+<text class="txt" x="70" y="34">Feasible ordering at the paper-like parameter point</text>
+<line class="grid" x1="190.0" y1="58" x2="190.0" y2="352"/>
+<text class="small" x="182.0" y="388">0</text>
+<line class="grid" x1="338.5" y1="58" x2="338.5" y2="352"/>
+<text class="small" x="330.5" y="388">0.75</text>
+<line class="grid" x1="487.1" y1="58" x2="487.1" y2="352"/>
+<text class="small" x="479.1" y="388">1.5</text>
+<line class="grid" x1="635.6" y1="58" x2="635.6" y2="352"/>
+<text class="small" x="627.6" y="388">2.25</text>
+<line class="grid" x1="784.2" y1="58" x2="784.2" y2="352"/>
+<text class="small" x="776.2" y="388">3</text>
+<text class="txt" x="28" y="99">RFS growth</text>
+<rect x="190" y="76" width="9.6" height="34" rx="7" fill="#ff7378"/>
+<text class="txt" x="213.6" y="99">0.0486 ps</text>
+<text class="txt" x="28" y="171">interaction window</text>
+<rect x="190" y="148" width="155.1" height="34" rx="7" fill="#7db7ff"/>
+<text class="txt" x="359.1" y="171">0.783 ps</text>
+<text class="txt" x="28" y="243">self-compression</text>
+<rect x="190" y="220" width="297.1" height="34" rx="7" fill="#6ee7b7"/>
+<text class="txt" x="501.1" y="243">1.5 ps</text>
+<text class="txt" x="28" y="315">filamentation</text>
+<rect x="190" y="292" width="576.8" height="34" rx="7" fill="#aeb9c9"/>
+<text class="txt" x="780.8" y="315">2.912 ps</text>
+<text class="small" x="450" y="400">time scale (ps)</text>
+<text class="txt" x="238" y="332">Success condition: amplification and compression finish before filamentation dominates.</text>
+</svg>
