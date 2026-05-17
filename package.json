@@ -1,0 +1,16 @@
+{
+  "name": "ai-hackathon",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev slidev.md --open",
+    "build": "slidev build slidev.md",
+    "export": "slidev export slidev.md",
+    "build:pages": "slidev build slidev.md --base /$npm_package_name/"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.15.2",
+    "slidev-theme-scholarly": "^1.3.3"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,14 @@
+node_modules
+dist
+.slidev
+*.local
+junhua-static
+junhua-static.zip
+junhua-standalone.html
+*.pdf
+*.log
+*.err.log
+*_conversation_export.md
+export_forward_raman_chat.md
+slides.md
+junhua.md
