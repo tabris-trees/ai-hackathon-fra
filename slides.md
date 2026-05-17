@@ -320,7 +320,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/density_growth_rates.png'" alt="Growth rates versus density" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/density_growth_rates.png'" alt="Growth rates versus density" class="w-full" />
 
 </div>
 <div>
@@ -355,7 +355,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/density_gain_factor.png'" alt="Linear gain factor versus density" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/density_gain_factor.png'" alt="Linear gain factor versus density" class="w-full" />
 
 </div>
 <div>
@@ -420,7 +420,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/spacetime_gain_zeta_tau.png'" alt="Spatiotemporal gain in zeta tau coordinates" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/spacetime_gain_zeta_tau.png'" alt="Spatiotemporal gain in zeta tau coordinates" class="w-full" />
 
 </div>
 <div>
@@ -462,7 +462,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/temporal_gain_profiles.png'" alt="Temporal gain profiles" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/temporal_gain_profiles.png'" alt="Temporal gain profiles" class="w-full" />
 
 </div>
 <div>
@@ -497,7 +497,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/spacetime_gain_lab_xt.png'" alt="Lab-frame spatiotemporal gain map" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/spacetime_gain_lab_xt.png'" alt="Lab-frame spatiotemporal gain map" class="w-full" />
 
 </div>
 <div>
@@ -540,7 +540,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/bessel_exact_vs_approx.png'" alt="Bessel exact versus approximations" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/bessel_exact_vs_approx.svg'" alt="Bessel exact versus approximations" class="w-full" />
 
 </div>
 <div>
@@ -580,7 +580,7 @@ $$
 <div class="grid grid-cols-[1.08fr_0.92fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/spacetime_gain_zeta_tau.png'" alt="Spatiotemporal gain map" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/spacetime_gain_zeta_tau.png'" alt="Spatiotemporal gain map" class="w-full" />
 
 </div>
 <div>
@@ -725,7 +725,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/nonlinear_three_wave_exchange.png'" alt="Nonlinear three-wave exchange" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/nonlinear_three_wave_exchange.png'" alt="Nonlinear three-wave exchange" class="w-full" />
 
 </div>
 <div>
@@ -755,7 +755,7 @@ FRA 的“放大”不是单纯数学增长，而是泵浦光子通过等离子�
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/nonlinear_manley_rowe_check.png'" alt="Manley Rowe check" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/nonlinear_manley_rowe_check.png'" alt="Manley Rowe check" class="w-full" />
 
 </div>
 <div>
@@ -784,7 +784,7 @@ $$
 <div class="grid grid-cols-[1.1fr_0.9fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/nonlinear_pump_seed_xt_maps.png'" alt="Pump depletion and seed amplification maps" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/nonlinear_pump_seed_xt_maps.png'" alt="Pump depletion and seed amplification maps" class="w-full" />
 
 </div>
 <div>
@@ -810,7 +810,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/nonlinear_plasma_wave_xt_map.png'" alt="Plasma wave mediator map" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/nonlinear_plasma_wave_xt_map.png'" alt="Plasma wave mediator map" class="w-full" />
 
 </div>
 <div>
@@ -836,7 +836,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/nonlinear_superradiant_scaling.png'" alt="Superradiant nonlinear scaling" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/nonlinear_superradiant_scaling.png'" alt="Superradiant nonlinear scaling" class="w-full" />
 
 </div>
 <div>
@@ -869,7 +869,7 @@ $$
 <div class="grid grid-cols-[1.18fr_0.82fr] gap-6 items-center">
 <div>
 
-<img :src="'/figures/nonlinear_interaction_length_design.png'" alt="Interaction length design" class="w-full" />
+<img :src="'/ai-hackathon-fra/figures/nonlinear_interaction_length_design.png'" alt="Interaction length design" class="w-full" />
 
 </div>
 <div>
