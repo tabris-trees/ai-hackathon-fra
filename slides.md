@@ -86,7 +86,7 @@ Towards the Generation of Petawatt Near-Infrared Few-Cycle Light Pulses via Forw
     </div>
   </div>
   <div class="figure-card">
-    <img :src="'/Fig1.png'" alt="Paper Fig. 1: pump seed EPW mechanism" />
+    <img :src="'/ai-hackathon-fra/Fig1.png'" alt="Paper Fig. 1: pump seed EPW mechanism" />
   </div>
 </div>
 
@@ -180,19 +180,19 @@ $$
 
 <div class="evidence-grid mt-5">
   <div class="evidence-tile">
-    <img :src="'/figures/density_growth_rates.png'" alt="Growth rates versus density" />
+    <img :src="'/ai-hackathon-fra/figures/density_growth_rates.png'" alt="Growth rates versus density" />
     <div class="evidence-caption">RFS 与 RBS 增长率随密度升高而接近；典型点 mu = 0.2 时，RFS 已不是可忽略通道。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/density_gain_factor.png'" alt="Linear gain factor versus density" />
+    <img :src="'/ai-hackathon-fra/figures/density_gain_factor.png'" alt="Linear gain factor versus density" />
     <div class="evidence-caption">把增长率代入 Bessel 增益后，小的密度差别会被放大成数量级差异。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/linear_gain_slices.svg'" alt="Linear gain slices" />
+    <img :src="'/ai-hackathon-fra/figures/linear_gain_slices.svg'" alt="Linear gain slices" />
     <div class="evidence-caption">不同时间切片显示早期增益较平缓，随后进入快速增长区。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/linear_gain_isolines.svg'" alt="Linear gain isolines" />
+    <img :src="'/ai-hackathon-fra/figures/linear_gain_isolines.svg'" alt="Linear gain isolines" />
     <div class="evidence-caption">等增益线给出可设计区域：靠近边界增强 RFS，但也压缩安全余量。</div>
   </div>
 </div>
@@ -227,15 +227,15 @@ $$
 
 <div class="evidence-grid three mt-5">
   <div class="evidence-tile">
-    <img :src="'/figures/spacetime_gain_zeta_tau.png'" alt="Spatiotemporal gain in zeta tau coordinates" />
+    <img :src="'/ai-hackathon-fra/figures/spacetime_gain_zeta_tau.png'" alt="Spatiotemporal gain in zeta tau coordinates" />
     <div class="evidence-caption">zeta-tau 坐标中的增益沿双曲线增长，对应 Bessel 解中的 sqrt(zeta tau)。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/temporal_gain_profiles.png'" alt="Temporal gain profiles" />
+    <img :src="'/ai-hackathon-fra/figures/temporal_gain_profiles.png'" alt="Temporal gain profiles" />
     <div class="evidence-caption">固定传播位置时，种子增益峰随群速度追赶时刻后移。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/bessel_exact_vs_approx.svg'" alt="Bessel exact versus approximations" />
+    <img :src="'/ai-hackathon-fra/figures/bessel_exact_vs_approx.svg'" alt="Bessel exact versus approximations" />
     <div class="evidence-caption">小信号区用级数近似；强增益区转入渐近指数行为。</div>
   </div>
 </div>
@@ -273,19 +273,19 @@ $$
 
 <div class="evidence-grid mt-5">
   <div class="evidence-tile">
-    <img :src="'/timescale_window.svg'" alt="FRA timescale feasibility window" />
+    <img :src="'/ai-hackathon-fra/timescale_window.svg'" alt="FRA timescale feasibility window" />
     <div class="evidence-caption">增长、滑移、成丝与自压缩被放在同一窗口中比较。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/linear_gain_heatmap.svg'" alt="Linear gain feasibility heatmap" />
+    <img :src="'/ai-hackathon-fra/figures/linear_gain_heatmap.svg'" alt="Linear gain feasibility heatmap" />
     <div class="evidence-caption">参数平面显示可行区是一条受限带，不是单个最佳点。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/spacetime_gain_lab_xt.png'" alt="Lab-frame spatiotemporal gain map" />
+    <img :src="'/ai-hackathon-fra/figures/spacetime_gain_lab_xt.png'" alt="Lab-frame spatiotemporal gain map" />
     <div class="evidence-caption">实验室坐标中的 x-t 图便于和 PIC 或实验诊断对齐。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/nonlinear_interaction_length_design.png'" alt="Interaction length design" />
+    <img :src="'/ai-hackathon-fra/figures/nonlinear_interaction_length_design.png'" alt="Interaction length design" />
     <div class="evidence-caption">作用长度由群速度滑移、增益和不稳定性共同限制。</div>
   </div>
 </div>
@@ -317,15 +317,15 @@ $$
 
 <div class="evidence-grid three mt-5">
   <div class="evidence-tile">
-    <img :src="'/cascade.svg'" alt="Cascaded FRA route" />
+    <img :src="'/ai-hackathon-fra/cascade.svg'" alt="Cascaded FRA route" />
     <div class="evidence-caption">级联路线：每一级用新的等离子体密度匹配下一段 Stokes 输出。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/nonlinear_three_wave_exchange.png'" alt="Nonlinear three-wave exchange" />
+    <img :src="'/ai-hackathon-fra/figures/nonlinear_three_wave_exchange.png'" alt="Nonlinear three-wave exchange" />
     <div class="evidence-caption">三波交换图显示泵浦、种子与 EPW 的能量流向。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/nonlinear_superradiant_scaling.png'" alt="Superradiant nonlinear scaling" />
+    <img :src="'/ai-hackathon-fra/figures/nonlinear_superradiant_scaling.png'" alt="Superradiant nonlinear scaling" />
     <div class="evidence-caption">非线性阶段出现 seed intensity proportional to pump intensity squared 的超辐射标度。</div>
   </div>
 </div>
@@ -365,15 +365,15 @@ $$
 
 <div class="evidence-grid three mt-5">
   <div class="evidence-tile">
-    <img :src="'/figures/nonlinear_pump_seed_xt_maps.png'" alt="Pump depletion and seed amplification maps" />
+    <img :src="'/ai-hackathon-fra/figures/nonlinear_pump_seed_xt_maps.png'" alt="Pump depletion and seed amplification maps" />
     <div class="evidence-caption">泵浦耗尽和种子增强必须发生在同一相互作用区。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/nonlinear_plasma_wave_xt_map.png'" alt="Plasma wave mediator map" />
+    <img :src="'/ai-hackathon-fra/figures/nonlinear_plasma_wave_xt_map.png'" alt="Plasma wave mediator map" />
     <div class="evidence-caption">EPW 场图验证中介波确实被激发，而不是由公式外推。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/figures/nonlinear_manley_rowe_check.png'" alt="Manley Rowe check" />
+    <img :src="'/ai-hackathon-fra/figures/nonlinear_manley_rowe_check.png'" alt="Manley Rowe check" />
     <div class="evidence-caption">Manley-Rowe 检查用于排除“曲线好看但物理不守恒”的复现。</div>
   </div>
 </div>
