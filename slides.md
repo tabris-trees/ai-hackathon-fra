@@ -19,58 +19,32 @@ Towards the Generation of Petawatt Near-Infrared Few-Cycle Light Pulses via Forw
 </div>
 
 <div class="team-block">
-  <div class="team-name">AI 炒大葱队</div>
-  <div class="team-line">主讲人：张峻华</div>
-  <div class="team-line">队员：伍先树、倪昊、申皓轩、赵治崴</div>
+  <div class="team-name">AI 物理推导与仿真工作流</div>
+  <div class="team-line">面向物理学院答辩：理论链条、公式复核、参数扫描与 EPOCH 执行</div>
 </div>
 
 ---
 
 ## 结论先行
 
-<div class="claim">我们不是复述论文，而是用 AI agent 把 FRA 的核心链条复现、审计，并推到级联波长拓展方案。</div>
+<div class="claim">我们的目标不是复述论文，而是用 AI Agent 把 FRA 的核心物理链条复现、审计，并推进到级联波长拓展方案。</div>
 
 <div class="grid-3 mt-8">
   <div class="panel">
-    <h3>物理复现</h3>
-    <p>三波共振、冷等离子体色散、RFS/RBS 增长率与 Bessel 线性解。</p>
+    <h3>理论复现</h3>
+    <p>从三波耦合、色散关系与 Bessel 增益解出发，复核论文中 RFS/RBS 竞争、线性增益与非线性耗尽。</p>
   </div>
   <div class="panel">
-    <h3>可行性审计</h3>
-    <p>把增长时间、群速度滑移、成丝时间和自压缩时间放到同一窗口中判断。</p>
+    <h3>可审计推导</h3>
+    <p>每一步保留公式来源、归一化假设、量纲检查与数值中间量，避免把 AI 输出当作不可追踪结论。</p>
   </div>
   <div class="panel">
-    <h3>扩展设计</h3>
-    <p>从 1.0 μm 到 1.8 μm 再到 3.2 μm，给出密度调谐的级联 FRA 路线。</p>
+    <h3>扩展设想</h3>
+    <p>利用密度阶梯和级联 Stokes 过程，把近红外飞秒脉冲向更长波段、更高能量窗口推进。</p>
   </div>
 </div>
 
-<div class="takeaway mt-8">面向物理评审，关键不是“AI 生成了答案”，而是每一步结论都能回到方程、量纲、图像和守恒检查。</div>
-
----
-
-## 为什么选择等离子体前向拉曼放大
-
-<div class="claim">少周期近红外拍瓦脉冲的瓶颈，是如何在不损伤传统光学介质的情况下继续放大。</div>
-
-<div class="grid-2 mt-8">
-  <div class="panel">
-    <h3>固体光学链路的限制</h3>
-    <ul class="compact-list">
-      <li>晶体、光栅、镀膜都有损伤阈值。</li>
-      <li>少周期脉冲还要求宽带和相位稳定。</li>
-      <li>继续堆能量会快速碰到材料极限。</li>
-    </ul>
-  </div>
-  <div class="panel">
-    <h3>等离子体作为增益介质</h3>
-    <ul class="compact-list">
-      <li>等离子体已电离，不存在普通透明介质的击穿问题。</li>
-      <li>电子等离子体波可作为泵浦与种子之间的能量中介。</li>
-      <li>问题转化为三波耦合是否能先于不稳定性完成放大。</li>
-    </ul>
-  </div>
-</div>
+<div class="takeaway mt-8">可信度来自闭环：原文定位 → 公式推导 → 参数扫描 → 图像验证 → 守恒检查 → 可执行仿真。</div>
 
 ---
 
@@ -78,11 +52,11 @@ Towards the Generation of Petawatt Near-Infrared Few-Cycle Light Pulses via Forw
 
 <div class="grid-2">
   <div>
-    <div class="claim">泵浦与种子同向传播；泵浦群速度更快，从后方追上种子并转移能量。</div>
+    <div class="claim">泵浦光、种子光与电子等离子体波满足三波共振；能量从泵浦转移到 Stokes 种子。</div>
     <div class="panel mt-6">
-      <p><span class="pump">Pump</span>：短波长、高频率、较快群速度。</p>
-      <p><span class="seed">Seed</span>：长波长 Stokes 分支，被外部注入并受激放大。</p>
-      <p><span class="epw">EPW</span>：电子等离子体波，承担能量与动量匹配。</p>
+      <p><span class="pump">Pump</span>：高频、较短波长，提供能量。</p>
+      <p><span class="seed">Seed</span>：Stokes 下移频率，作为被放大的脉冲。</p>
+      <p><span class="epw">EPW</span>：电子等离子体波，承担频率与动量失配。</p>
     </div>
   </div>
   <div class="figure-card">
@@ -90,13 +64,13 @@ Towards the Generation of Petawatt Near-Infrared Few-Cycle Light Pulses via Forw
   </div>
 </div>
 
-<div class="proof">论文 Fig. 1 对应的物理对象被拆成 pump / seed / EPW 三个可审计变量，后续所有图都围绕这三个变量展开。</div>
+<div class="proof">图像来自原论文 Fig. 1，用于锚定 pump / seed / EPW 的相互作用关系。</div>
 
 ---
 
-## 三波共振关系是整个复现的支点
+## 共振条件决定可放大窗口
 
-FRA 用电子等离子体波完成频率与波矢匹配：
+FRA 的三波匹配条件为
 
 $$
 \omega_0=\omega_1+\omega_{\rm pe},
@@ -104,7 +78,7 @@ $$
 k_0=k_1+k_{\rm epw}.
 $$
 
-冷等离子体中的光波色散为：
+电磁波在等离子体中的色散关系为
 
 $$
 \omega^2=\omega_{\rm pe}^2+c^2k^2,
@@ -112,13 +86,13 @@ $$
 v_g=c\sqrt{1-\frac{\omega_{\rm pe}^2}{\omega^2}}.
 $$
 
-<div class="takeaway mt-8">这两组式子决定了：为什么泵浦能追上种子、为什么密度可以调谐输出波长、为什么 RFS/RBS 的差别最终进入波矢 mismatch。</div>
+<div class="takeaway mt-8">这两个式子同时约束频率下移、群速度失配和可传播性；后续 RFS/RBS 竞争与密度窗口都从这里展开。</div>
 
 ---
 
-## 输出波长由等离子体密度调谐
+## 由泵浦波长推得 Stokes 波长
 
-由 Stokes 条件和冷等离子体色散，可得到种子波长：
+在固定电子密度下，Stokes 波长可写成
 
 $$
 \lambda_{\rm seed}
@@ -129,32 +103,24 @@ $$
 
 <div class="grid-3 mt-8">
   <div class="panel">
-    <h3>低密度</h3>
-    <p>频差小，输出波长接近泵浦。</p>
+    <h3>密度越高</h3>
+    <p>等离子体频率越高，Stokes 频移更大，种子波长更长。</p>
   </div>
   <div class="panel">
-    <h3>中等密度</h3>
-    <p>频差增大，FRA 可进入有效增益区。</p>
+    <h3>但窗口有限</h3>
+    <p>密度接近截止时，传播、群速度匹配和不稳定性都会迅速恶化。</p>
   </div>
   <div class="panel">
-    <h3>接近边界</h3>
-    <p>增益提高，但 Stokes 分支和不稳定性约束变得更紧。</p>
+    <h3>级联的意义</h3>
+    <p>一级 FRA 产生的 Stokes 可作为下一阶段种子，逐级拓展波长。</p>
   </div>
 </div>
 
 ---
 
-## Q1：RFS/RBS 线性增长率复现
+## RFS/RBS 竞争给出密度选择
 
-从三波耦合增长率出发，前向与后向的主要差异进入 EPW 波数：
-
-$$
-g=
-\frac{a_0 c k_2}{4}
-\sqrt{\frac{\omega_{\rm pe}}{\omega_0-\omega_{\rm pe}}}.
-$$
-
-令 $\mu=n_e/n_{c0}$，可写成：
+令 $\mu=n_e/n_{c0}$，增长率可写为
 
 $$
 g_{\rm RFS,RBS}=
@@ -165,7 +131,7 @@ g_{\rm RFS,RBS}=
 \sqrt{\frac{\sqrt{\mu}}{1-\sqrt{\mu}}}.
 $$
 
-典型复现点：
+论文参数示例：
 
 $$
 \lambda_0=1.0\,\mu{\rm m},\quad
@@ -174,34 +140,36 @@ a_0=0.0854,\quad
 \frac{g_{\rm RFS}}{g_{\rm RBS}}\approx0.47.
 $$
 
+<div class="takeaway mt-8">密度不是越高越好；我们需要在前向放大效率、反向散射抑制和传播窗口之间取平衡。</div>
+
 ---
 
-## 密度扫描把“前向是否足够强”量化
+## 参数扫描：密度、增长率与增益
 
 <div class="evidence-grid mt-5">
   <div class="evidence-tile">
     <img :src="'/ai-hackathon-fra/figures/density_growth_rates.png'" alt="Growth rates versus density" />
-    <div class="evidence-caption">RFS 与 RBS 增长率随密度升高而接近；典型点 mu = 0.2 时，RFS 已不是可忽略通道。</div>
+    <div class="evidence-caption">RFS 与 RBS 增长率随密度变化，标出论文使用的 $\mu=0.2$ 区域。</div>
   </div>
   <div class="evidence-tile">
     <img :src="'/ai-hackathon-fra/figures/density_gain_factor.png'" alt="Linear gain factor versus density" />
-    <div class="evidence-caption">把增长率代入 Bessel 增益后，小的密度差别会被放大成数量级差异。</div>
+    <div class="evidence-caption">线性增益因子显示可用密度窗口，而不是单点参数。</div>
   </div>
   <div class="evidence-tile">
     <img :src="'/ai-hackathon-fra/figures/linear_gain_slices.svg'" alt="Linear gain slices" />
-    <div class="evidence-caption">不同时间切片显示早期增益较平缓，随后进入快速增长区。</div>
+    <div class="evidence-caption">不同传播长度与相互作用时间下，增益对密度的敏感性。</div>
   </div>
   <div class="evidence-tile">
     <img :src="'/ai-hackathon-fra/figures/linear_gain_isolines.svg'" alt="Linear gain isolines" />
-    <div class="evidence-caption">等增益线给出可设计区域：靠近边界增强 RFS，但也压缩安全余量。</div>
+    <div class="evidence-caption">等增益线用于判断实验与仿真的参数容忍度。</div>
   </div>
 </div>
 
 ---
 
-## 线性阶段不是简单的 exp(gt)
+## 线性理论不是简单的 $\exp(gt)$
 
-小信号阶段的种子振幅满足 Bessel 形式：
+弱种子线性解具有 Bessel 结构：
 
 $$
 a_1(\zeta,\tau)
@@ -209,7 +177,7 @@ a_1(\zeta,\tau)
 a_{10}I_0\!\left(2g\sqrt{\zeta\tau}\right).
 $$
 
-因此强度增益为：
+对应强度增益为
 
 $$
 G_I(\zeta,\tau)
@@ -219,149 +187,30 @@ G_I(\zeta,\tau)
 I_0^2\!\left(2g\sqrt{\zeta\tau}\right).
 $$
 
-<div class="takeaway mt-8">这个形式对教授评审很关键：它说明增长是时空重叠驱动的，不是把局域增长率机械乘上实验时间。</div>
+<div class="takeaway mt-8">这是时空耦合问题，不能只用单一时间指数增长近似；这也是 AI 推导中最容易出错的环节之一。</div>
 
 ---
 
-## Bessel 解的图像证据
+## Bessel 解与时空增益图像
 
 <div class="evidence-grid three mt-5">
   <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/spacetime_gain_zeta_tau.png'" alt="Spatiotemporal gain in zeta tau coordinates" />
-    <div class="evidence-caption">zeta-tau 坐标中的增益沿双曲线增长，对应 Bessel 解中的 sqrt(zeta tau)。</div>
+    <img :src="'/ai-hackathon-fra/figures/bessel_exact_vs_approx.svg'" alt="Bessel exact and asymptotic gain comparison" />
+    <div class="evidence-caption">精确 Bessel 解与渐近近似的适用区间对比。</div>
+  </div>
+  <div class="evidence-tile">
+    <img :src="'/ai-hackathon-fra/figures/spacetime_gain_zeta_tau.png'" alt="Spacetime gain in zeta tau coordinates" />
+    <div class="evidence-caption">在 $\zeta,\tau$ 坐标中，增益沿相互作用区域累积。</div>
   </div>
   <div class="evidence-tile">
     <img :src="'/ai-hackathon-fra/figures/temporal_gain_profiles.png'" alt="Temporal gain profiles" />
-    <div class="evidence-caption">固定传播位置时，种子增益峰随群速度追赶时刻后移。</div>
-  </div>
-  <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/bessel_exact_vs_approx.svg'" alt="Bessel exact versus approximations" />
-    <div class="evidence-caption">小信号区用级数近似；强增益区转入渐近指数行为。</div>
+    <div class="evidence-caption">不同位置的时间增益曲线，用来检查线性解的形状。</div>
   </div>
 </div>
 
 ---
 
-## Q3：可行窗口由时间尺度夹逼决定
-
-FRA 必须在有效增长窗口内完成放大，同时避开成丝等不稳定性：
-
-$$
-\tau_{\rm RFS}<\tau_{\rm window}<\tau_{\rm fil},
-\qquad
-\tau_{\rm sfc}<\tau_{\rm fil}.
-$$
-
-典型参数下：
-
-$$
-\lambda_0=1.0\,\mu{\rm m},\quad
-a_0=0.0854,\quad
-\mu=0.2,\quad
-\tau_{\rm pump}=240\,{\rm fs}.
-$$
-
-$$
-0.049\,{\rm ps}<0.78\,{\rm ps}<2.9\,{\rm ps}.
-$$
-
-<div class="takeaway mt-7">我们保留了 Task 3 中自压缩公式的量纲疑点，并用图像量级估计作为保守替代，而不是给出不可审计的漂亮数字。</div>
-
----
-
-## 时间尺度窗口的图像证据
-
-<div class="evidence-grid mt-5">
-  <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/timescale_window.svg'" alt="FRA timescale feasibility window" />
-    <div class="evidence-caption">增长、滑移、成丝与自压缩被放在同一窗口中比较。</div>
-  </div>
-  <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/linear_gain_heatmap.svg'" alt="Linear gain feasibility heatmap" />
-    <div class="evidence-caption">参数平面显示可行区是一条受限带，不是单个最佳点。</div>
-  </div>
-  <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/spacetime_gain_lab_xt.png'" alt="Lab-frame spatiotemporal gain map" />
-    <div class="evidence-caption">实验室坐标中的 x-t 图便于和 PIC 或实验诊断对齐。</div>
-  </div>
-  <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/nonlinear_interaction_length_design.png'" alt="Interaction length design" />
-    <div class="evidence-caption">作用长度由群速度滑移、增益和不稳定性共同限制。</div>
-  </div>
-</div>
-
----
-
-## Q4：级联 FRA 的波长拓展路线
-
-密度调谐给出一级级 Stokes 转换：
-
-$$
-\mu_j
-=
-\frac{n_{e,j}}{n_{c,j}}
-=
-\left(1-\frac{\lambda_j}{\lambda_{j+1}}\right)^2.
-$$
-
-推荐两级路线：
-
-| 级数 | 波长转换 | $\mu_j$ | 电子密度 |
-|---|---:|---:|---:|
-| 1 | $1.0\rightarrow1.8\,\mu{\rm m}$ | 0.198 | $2.2\times10^{20}\,{\rm cm^{-3}}$ |
-| 2 | $1.8\rightarrow3.2\,\mu{\rm m}$ | 0.191 | $6.5\times10^{19}\,{\rm cm^{-3}}$ |
-
----
-
-## 级联设计不能只看波长表
-
-<div class="evidence-grid three mt-5">
-  <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/cascade.svg'" alt="Cascaded FRA route" />
-    <div class="evidence-caption">级联路线：每一级用新的等离子体密度匹配下一段 Stokes 输出。</div>
-  </div>
-  <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/nonlinear_three_wave_exchange.png'" alt="Nonlinear three-wave exchange" />
-    <div class="evidence-caption">三波交换图显示泵浦、种子与 EPW 的能量流向。</div>
-  </div>
-  <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/nonlinear_superradiant_scaling.png'" alt="Superradiant nonlinear scaling" />
-    <div class="evidence-caption">非线性阶段出现 seed intensity proportional to pump intensity squared 的超辐射标度。</div>
-  </div>
-</div>
-
-<div class="evidence-note">这页的重点是设计约束：级联不是“波长继续往下接”这么简单，还要检查每一级是否有足够泵浦、足够重叠长度和可控不稳定性。</div>
-
----
-
-## Agent 工作流：把物理复现变成可审计链条
-
-<div class="flow mt-8">
-  <div class="flow-step">
-    <b>1. 定位来源</b>
-    <span>从论文、补充材料和任务问题中定位公式与参数。</span>
-  </div>
-  <div class="flow-step">
-    <b>2. 推导结构</b>
-    <span>从色散关系推出 RFS/RBS 增长率和调谐关系。</span>
-  </div>
-  <div class="flow-step">
-    <b>3. 数值复现</b>
-    <span>计算增长率、时间窗口和密度阶梯。</span>
-  </div>
-  <div class="flow-step">
-    <b>4. 图像验证</b>
-    <span>用参数扫描、时空图和非线性图检查结论。</span>
-  </div>
-  <div class="flow-step">
-    <b>5. 物理审计</b>
-    <span>检查量纲、守恒律和可行区边界。</span>
-  </div>
-</div>
-
----
-
-## 非线性复现需要守恒检查
+## 非线性阶段需要守恒检查
 
 <div class="evidence-grid three mt-5">
   <div class="evidence-tile">
@@ -369,45 +218,120 @@ $$
     <div class="evidence-caption">泵浦耗尽和种子增强必须发生在同一相互作用区。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/nonlinear_plasma_wave_xt_map.png'" alt="Plasma wave mediator map" />
-    <div class="evidence-caption">EPW 场图验证中介波确实被激发，而不是由公式外推。</div>
+    <img :src="'/ai-hackathon-fra/figures/nonlinear_plasma_wave_xt_map.png'" alt="Plasma wave map" />
+    <div class="evidence-caption">等离子体波振幅提供三波耦合是否同步的独立证据。</div>
   </div>
   <div class="evidence-tile">
-    <img :src="'/ai-hackathon-fra/figures/nonlinear_manley_rowe_check.png'" alt="Manley Rowe check" />
-    <div class="evidence-caption">Manley-Rowe 检查用于排除“曲线好看但物理不守恒”的复现。</div>
+    <img :src="'/ai-hackathon-fra/figures/nonlinear_manley_rowe_check.png'" alt="Manley Rowe conservation check" />
+    <div class="evidence-caption">Manley-Rowe 型能量交换检查用于避免“图像像对了但物理不守恒”。</div>
   </div>
 </div>
 
 ---
 
-## 复现与扩展的最终表述
+## 级联 FRA：从单级复现到设计问题
 
-| 问题 | 我们复现/扩展了什么 | 给物理评审的判断 |
-|---|---|---|
-| 机制 | pump-seed-EPW 三波共振、群速度追赶和 Stokes 调谐 | FRA 可以作为受控前向增益机制讨论 |
-| Q1 | $g_{\rm RFS}/g_{\rm RBS}\approx0.47$ at $\mu=0.2$ | 前向通道在中等密度下不可忽略 |
-| Q3 | $0.049<0.78<2.9\,{\rm ps}$ | 存在增长先于成丝的时间窗口 |
-| Q4 | $1.0\rightarrow1.8\rightarrow3.2\,\mu{\rm m}$ | 级联路线可由密度调谐给出一阶设计 |
+<div class="grid-2 mt-6">
+  <div class="figure-card">
+    <img :src="'/ai-hackathon-fra/cascade.svg'" alt="Cascaded FRA concept" />
+  </div>
+  <div>
+    <div class="panel">
+      <h3>核心设想</h3>
+      <p>每一级的 Stokes 输出作为下一级种子，密度重新选择，使频移逐步累积。</p>
+    </div>
+    <div class="panel mt-4">
+      <h3>主要约束</h3>
+      <p>群速度失配、泵浦耗尽、RBS 抑制和级间时序必须同时满足。</p>
+    </div>
+  </div>
+</div>
 
 ---
 
-## 总结
+## 级联系统的时间窗口
 
-<div class="claim">FRA 的价值在于把高功率红外放大从材料损伤问题，转化为可计算、可诊断、可设计的等离子体三波耦合问题。</div>
+<div class="grid-2 mt-6">
+  <div>
+    <div class="claim">级联不是把“更长波长”简单接起来，而是要保证每一级仍有足够重叠长度和可控不稳定性。</div>
+    <div class="takeaway mt-6">时间窗口图把物理可行性转化为可扫描、可检验的设计空间。</div>
+  </div>
+  <div class="figure-card">
+    <img :src="'/ai-hackathon-fra/timescale_window.svg'" alt="Timescale window for cascaded FRA" />
+  </div>
+</div>
 
-<div class="grid-2 mt-8">
+---
+
+## Agent 工作流：把物理复现变成可审计链条
+
+<div class="flow mt-8">
+  <div class="flow-step">
+    <b>1. 锚定原文</b>
+    <span>从题目描述定位论文、图像、公式编号和参数表。</span>
+  </div>
+  <div class="flow-step">
+    <b>2. 原文解读</b>
+    <span>抽取物理假设、归一化方式和关键推理链。</span>
+  </div>
+  <div class="flow-step">
+    <b>3. 多 Agent 推导</b>
+    <span>并行复核公式、量纲、符号和边界条件。</span>
+  </div>
+  <div class="flow-step">
+    <b>4. 理论复现</b>
+    <span>用解析式复现图像，并做 AI 内部交叉检查。</span>
+  </div>
+  <div class="flow-step">
+    <b>5. 仿真执行</b>
+    <span>扫描参数后自动编译、提交和执行 EPOCH 任务。</span>
+  </div>
+</div>
+
+---
+
+## AI 工作流全链路图
+
+<div class="workflow-image-wrap mt-5">
+  <img :src="'/ai-hackathon-fra/ai-workflow-fra.png'" alt="AI research workflow for FRA reproduction and EPOCH execution" />
+</div>
+
+<div class="evidence-note">从题目检索、论文解读、多 Agent 推导、理论复现、参数扫描，到 EPOCH 自动编译执行，形成可追溯闭环。</div>
+
+---
+
+## 面向 EPOCH 的落地路径
+
+<div class="grid-3 mt-8">
   <div class="panel">
-    <h3>物理结论</h3>
-    <p>在典型参数下，RFS 增长、群速度窗口和成丝时间之间存在可行排序。</p>
-    <p>级联 FRA 可以把近红外种子推进到更长波段。</p>
+    <h3>输入文件生成</h3>
+    <p>由解析参数自动写入密度、激光包络、边界条件和诊断输出。</p>
+  </div>
+  <div class="panel">
+    <h3>编译与运行</h3>
+    <p>AI 负责批量配置、提交任务和记录版本；人负责审核物理假设。</p>
+  </div>
+  <div class="panel">
+    <h3>结果审计</h3>
+    <p>把场图、能量交换、频谱和守恒检查回写到同一条证据链。</p>
+  </div>
+</div>
+
+<div class="takeaway mt-8">最终交付的不是单张漂亮曲线，而是一套可以复跑、可定位错误、可扩展到新参数区的研究流程。</div>
+
+---
+
+## 答辩要点
+
+<div class="grid-2 mt-7">
+  <div class="panel">
+    <h3>物理可信性</h3>
+    <p>所有结论都回到共振条件、色散关系、增长率、Bessel 解和守恒检查。</p>
   </div>
   <div class="panel">
     <h3>AI 的角色</h3>
-    <p>AI agent 不是替代物理判断，而是加速公式定位、推导复核、参数扫描和图像审计。</p>
-    <p>最终可信度仍来自方程、量纲、图像和守恒律。</p>
+    <p>AI 不替代物理判断，而是加速论文定位、公式复核、参数扫描和仿真执行。</p>
   </div>
 </div>
 
-$$
-1.0\,\mu{\rm m}\rightarrow1.8\,\mu{\rm m}\rightarrow3.2\,\mu{\rm m}
-$$
+<div class="claim mt-8">如果每一步都能被复查，AI 才能真正进入物理研究工作流。</div>

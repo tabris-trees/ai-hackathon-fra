@@ -236,6 +236,19 @@
   line-height: 1.38;
 }
 
+.workflow-image-wrap {
+  background: var(--fra-panel);
+  border: 1px solid rgba(255,255,255,0.14);
+  padding: 10px;
+}
+
+.workflow-image-wrap img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
+}
+
 .slidev-layout.cover {
   background:
     linear-gradient(135deg, rgba(16,20,18,0.96), rgba(19,29,25,0.9)),
