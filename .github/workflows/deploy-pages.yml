@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Build Slidev
-        run: npx slidev build slidev.md --base "/${{ github.event.repository.name }}/"
+        run: npx slidev build slides.md --base "/${{ github.event.repository.name }}/"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

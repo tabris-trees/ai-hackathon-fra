@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "slidev slidev.md --open",
-    "build": "slidev build slidev.md",
-    "export": "slidev export slidev.md",
-    "build:pages": "slidev build slidev.md --base /$npm_package_name/"
+    "dev": "slidev slides.md --open",
+    "build": "slidev build slides.md",
+    "export": "slidev export slides.md",
+    "build:pages": "slidev build slides.md --base /$npm_package_name/"
   },
   "dependencies": {
     "@slidev/cli": "^52.15.2",

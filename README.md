@@ -17,4 +17,4 @@ After pushing to the `main` branch, enable GitHub Pages in the repository settin
 
 - Source: GitHub Actions
 
-The workflow builds `slidev.md` and publishes the static site automatically.
+The workflow builds `slides.md` and publishes the static site automatically.
